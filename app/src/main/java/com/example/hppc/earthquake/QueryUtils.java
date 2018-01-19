@@ -48,12 +48,7 @@ public final class QueryUtils {
      * */
     public static String fetchJSONArray(String stringURL){
 
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-            Log.e(LogCat,"Thread QueryUtils didn't sleep...\n");
-        }
+
         // create url from stringURL
         URL url = createURL(stringURL);
         //fetch input stream from the
